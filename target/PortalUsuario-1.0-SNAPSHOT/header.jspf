@@ -1,0 +1,19 @@
+  
+
+<div style="background:#f2f2f2;padding:10px;border-bottom:1px solid #ddd;">
+    <h1 style="margin:0;">Mi Portal</h1>
+    <div style="float:right;">
+        <c:if test="${not empty sessionScope.user}">
+            Bienvenido, <b>${sessionScope.user}</b> |
+            <a href="${pageContext.request.contextPath}/logout" 
+               onclick="document.getElementById('logoutForm').submit(); return false;">
+               Cerrar sesion
+            </a>
+            <form id="logoutForm" action="${pageContext.request.contextPath}/logout" 
+                  method="post" style="display:none;">
+                <input type="hidden" name="logout" value="1"/>
+            </form>
+        </c:if>
+    </div>
+    <div style="clear:both;"></div>
+</div>

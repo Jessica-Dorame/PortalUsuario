@@ -1,0 +1,5 @@
+Control\UploadServlet.class
+com\mycompany\portalusuario\resources\JakartaEE10Resource.class
+Control\AuthFilter.class
+com\mycompany\portalusuario\JakartaRestConfiguration.class
+Control\LoginServlet.class
